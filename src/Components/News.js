@@ -10,7 +10,7 @@ const News = (props) => {
   const [loading, setLoading] = useState(false);
 
   const updateNews = async ()=>{
-    let url = `https://inshorts.deta.dev/news?category=${props.category}`
+    let url = `https://inshortsapi.vercel.app/news?category=${props.category}`
     setLoading(true);
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -32,6 +32,7 @@ const News = (props) => {
       {loading && <Spinner/>}
       <div className="newsitems">
           {articles && articles.map((element)=>{
+            console.log(element)
             return(
               <div key={element.id}>
                 <NewsItem title ={element.title} content={element.content} imageUrl ={element.imageUrl} readMoreUrl= {element.readMoreUrl}/>

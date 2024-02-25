@@ -24,7 +24,7 @@ export default function Navbar() {
             
             <ul className='nav-links-buttons flex justify-evenly items-center'>
                 {/* <li><Link className='p-2 m-2 px-4 bg-[#0063eb] text-white rounded-full hover:bg-[#004eba]' target="_blank" href="https://github.com/samyakjain2431">{"</> Get Code"}</Link></li> */}
-                <li><a className='p-2 m-2 px-4 bg-[#0063eb] text-white rounded-full hover:bg-[#004eba]'  target="_blank" rel="noreferrer" href="https://samyakjain.super.site">{"Go to Portfolio"}</a></li>
+                <li><a className='p-2 m-2 px-4 bg-[#0063eb] text-white rounded-full hover:bg-[#004eba]'  target="_blank" rel="noreferrer" href="https://samyakjainofficial.netlify.app">{"Go to Portfolio"}</a></li>
             </ul>
           
             
